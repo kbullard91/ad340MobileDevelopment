@@ -3,4 +3,5 @@
     <string name="name">Kari Bullard</string>
     <string name="fun_fact">Fun Fact:</string>
     <string name="fact_text">2 years ago I adopted a 50 pound dog, being told he was fully grown. He\'s since gained 30 pounds. Turns out he was a puppy, but a lovable one so it all worked out.</string>
+    <string name="button_send">Send</string>
 </resources>
