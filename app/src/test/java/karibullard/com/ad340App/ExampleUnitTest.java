@@ -1,4 +1,4 @@
-package karibullard.com.homework1;
+package karibullard.com.ad340App;
 
 import org.junit.Test;
 

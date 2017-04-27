@@ -1,4 +1,4 @@
-package karibullard.com.homework1;
+package karibullard.com.ad340App;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

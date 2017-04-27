@@ -1,11 +1,10 @@
-package karibullard.com.homework1;
+package karibullard.com.ad340App;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
-
 
 
 public class DisplayMessageActivity extends AppCompatActivity {
