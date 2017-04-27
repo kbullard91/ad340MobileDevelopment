@@ -1,6 +1,7 @@
 package karibullard.com.ad340App;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.Toast;
 
 /**
  * Created by karibullard on 4/26/17.
@@ -43,12 +45,24 @@ public class ButtonAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
+        final int position = i;
         Button button = new Button(context);
         button.setId(i);
         button.setBackgroundColor(Color.parseColor("#00bcd4"));
         button.setLayoutParams(new GridView.LayoutParams(450,450));
-        button.setFocusable(false);
-        button.setClickable(false);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(position == 0){
+                    Intent intent = new Intent(context, InfoList.class);
+                    context.startActivity(intent);
+                } else {
+                    Toast.makeText(context, "" + position,
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
 
         return button;
     }
