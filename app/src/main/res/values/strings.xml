@@ -1,8 +1,15 @@
 <resources>
-    <string name="app_name">About</string>
-    <string name="name">Kari Bullard</string>
-    <string name="fun_fact">Fun Fact:</string>
-    <string name="fact_text">2 years ago I adopted a 50 pound dog, being told he was fully grown. He\'s since gained 30 pounds. Turns out he was a puppy, but a lovable one so it all worked out.</string>
+    <string name="app_name">Know Ya Boo</string>
+    <string name="about_app">This app will allow players to guess what another player\'s response to a question will be.</string>
+    <string name="rule1">Players in a match will specify who their play-partner is.</string>
+    <string name="rule2">Each round, answer-player and guessing-player will alternate. A question will be posed, and players will respond accordingly.</string>
+    <string name="rule3">At the end of each round, all players in the match will be able to view the responses for each play-pair. If players deem the response to be close enough, a point will be awarded to that play pair.</string>
     <string name="button_send">Send</string>
-    <string name="btn_string">1</string>
+    <string name="header_rules">About the App:</string>
+    <string name="menu_action_setting">Home</string>
+    <string name="about_us">About Us</string>
+    <string name="menu_recycler_view">Recycler View</string>
+    <string name="new_game">New Game</string>
+    <string name="score_board">Score Board</string>
+    <string name="find_players">Find Players</string>
 </resources>

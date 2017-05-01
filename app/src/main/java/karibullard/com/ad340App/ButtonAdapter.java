@@ -54,7 +54,7 @@ public class ButtonAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                    Intent intent = new Intent(context, InfoList.class);
+                    Intent intent = new Intent(context, DisplayInfoList.class);
                     context.startActivity(intent);
                 } else {
                     Toast.makeText(context, "" + position,

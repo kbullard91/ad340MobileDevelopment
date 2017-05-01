@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="karibullard.com.ad340App">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,30 +11,35 @@
         <activity android:name="karibullard.com.ad340App.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name="karibullard.com.ad340App.DisplayMessageActivity"
+        <!-- A child of the main activity -->
+        <activity
+            android:name="karibullard.com.ad340App.DisplayAbout"
             android:parentActivityName="karibullard.com.ad340App.MainActivity" >
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="karibullard.com.ad340App.MainActivity" />
         </activity>
-
-
-        <activity android:name="karibullard.com.ad340App.InfoList"
-            android:parentActivityName="karibullard.com.ad340App.MainActivity">
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <!-- A child of the main activity -->
+        <activity
+            android:name="karibullard.com.ad340App.DisplayInfoList"
+            android:parentActivityName="karibullard.com.ad340App.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="karibullard.com.ad340App.MainActivity" />
         </activity>
-
-
+        <!-- A child of the main activity -->
+        <activity
+            android:name="karibullard.com.ad340App.DisplayMessageActivity"
+            android:parentActivityName="karibullard.com.ad340App.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="karibullard.com.ad340App.MainActivity" />
+        </activity>
     </application>
-
 </manifest>

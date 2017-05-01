@@ -5,28 +5,22 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import static karibullard.com.ad340App.MainActivity.EXTRA_MESSAGE;
+/**
+ * Created by karibullard on 4/30/17.
+ */
 
-
-public class DisplayMessageActivity extends AppCompatActivity {
-
-    private static final String TAG = "DisplayMessageActivity";
+public class DisplayAbout extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message);
+        setContentView(R.layout.activity_about);
         Intent intent = getIntent();
-        String message = intent.getStringExtra(EXTRA_MESSAGE);
-        TextView display_message = (TextView)findViewById(R.id.textView);
-        display_message.setText(message);
 
         //Main App Menu
         Toolbar mToolBar = (Toolbar) findViewById(R.id.app_menu);
@@ -63,13 +57,13 @@ public class DisplayMessageActivity extends AppCompatActivity {
             startActivity(intent);
         }
         if(item.getItemId() == R.id.start_game){
-            Toast.makeText(DisplayMessageActivity.this, "You have clicked on start game", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DisplayAbout.this, "You have clicked on start game", Toast.LENGTH_SHORT).show();
         }
         if(item.getItemId() == R.id.score_board){
-            Toast.makeText(DisplayMessageActivity.this, "You have clicked on score board", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DisplayAbout.this, "You have clicked on score board", Toast.LENGTH_SHORT).show();
         }
         if(item.getItemId() == R.id.find_players){
-            Toast.makeText(DisplayMessageActivity.this, "You have clicked on find players", Toast.LENGTH_SHORT).show();
+            Toast.makeText(DisplayAbout.this, "You have clicked on find players", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
 
@@ -78,30 +72,28 @@ public class DisplayMessageActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        Log.d(TAG, "onStart() called");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.d(TAG, "onPause() called");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.d(TAG, "onResume() called");
+
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.d(TAG, "onStop() called");
+
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "onDestroy() called");
+
     }
 }
